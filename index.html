@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Crystal Game</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+</head>
+<body>
+	<h1>Crystals Collector!</h1>
+	<section id="instructions">
+		<p>You will be given a random number at the start of the game.</p>
+		<br>
+		<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+		<br>
+		<p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+		<br>
+		<p>The value of each crystal is hidden from you until you click on it.</p>
+		<br>
+		<p>Each time when the game starts, the game will change the values of each crystal.</p>
+		<br>
+	</section>
+	<div class="container">
+		<div id="computerChoice">0</div>
+		<section id="winLosses">
+			<p id="wins">Wins: 0</p>
+			<p id="losses">Losses: 0</p>
+		</section>
+	<div class="stones">
+		<button class="btn btn-default ruby"><img src="assets/images/ruby.jpg" width="60" height="60"></button>
+		<button class="btn btn-default diamond"><img src="assets/images/diamond.jpg" width="60" height="60"></button>
+		<button class="btn btn-default tanzanite"><img src="assets/images/tanzanite.jpg" width="60" height="60"></button>
+		<button class="btn btn-default emerald"><img src="assets/images/emerald.jpg" width="60" height="60"></button>
+	</div>
+	<br>
+	<div id="final">Your total score is:</div>
+	<div id="score">0</div>
+</body>
+</html>
